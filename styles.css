@@ -1,13 +1,33 @@
+/* General styles for all pages */
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
 }
 
+#my-hobbies, #my-projects {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #6f6c77;
+}
+
 /* Header styles */
 header {
-    background-color: #333;
+    background-color: #47454b;
     color: #fff;
     padding: 30px;
     display: flex;
@@ -19,7 +39,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 nav li {
@@ -29,6 +49,7 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
 }
 
@@ -38,9 +59,9 @@ nav a:hover {
 
 /* Main content styles */
 main {
-    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 section {
@@ -55,14 +76,6 @@ section {
     height: 350px;
 }
 
-#profile-picture {
-    margin-top: 20px;
-    width: 300px;
-    height: auto;
-    border-radius: 50%;
-    transition: all 0.8s ease-in-out;
-}
-
 h2 {
     margin-top: 0;
     font-size: 35px;
@@ -70,56 +83,7 @@ h2 {
 
 p {
     text-align: justify;
-}
-
-#profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.project {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.experience {
-    margin: 80px;
-}
-
-/* Form styles */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #555;
+    line-height: 1.5em;
 }
 
 /* Footer styles */
@@ -130,18 +94,18 @@ input[type="submit"]:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #47454b;
     display: flex;
     justify-content: space-around;
-    gap: 1200px;
+    gap: 90vh;
     align-items: center;
     color: #fff;
     padding: 15px;
     display: flex;
-    padding-top: 5px;
+    padding-top: 2px;
     padding-bottom: 5px;
     height: 100%;
-    position: absolute;
+    position: relative;
 }
 
 .social-links {
@@ -151,6 +115,197 @@ footer {
     align-items: center;
 }
 
-.contact-info h2 {
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contact-info h3 {
     font-size: 24px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 0;
+    width: 300px;
+}
+
+/*--------------------------------------------------*/
+/* Styles for Myself page */
+
+#myself {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: #47454b;
+    background: linear-gradient(#47454b, 60%, #ffffff);
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container {
+    margin-top: 40px;
+}
+
+#profile-picture {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    transition: all 0.7s ease-in-out;
+}
+
+#profile h2 {
+    font-size: 50px;
+    font-style: italic;
+}
+
+#about-me {
+    padding-left: 30vh;
+    padding-right: 30vh;
+    padding-bottom: 10vh;
+}
+
+#about-me p {
+    font-size: 24px;
+}
+
+#about-me #note {
+    font-size: 16px;
+    font-style: italic;
+}
+
+/*--------------------------------------------------*/
+/* Styles for My Hobbies page */
+
+#my-hobbies h2 {
+    margin: 10px;
+    font-size: 36px;
+    text-shadow: 3px 3px 3px #6f6e72;
+    text-align: center;
+}
+
+#my-hobbies h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#my-hobbies p {
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#my-hobbies .content-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr;
+    gap: 5vh;
+}
+
+.hobby {
+    padding: 50px;
+    border: #47454b solid 2px;
+    border-radius: 100px;
+}
+
+#my-hobbies iframe, #my-hobbies img {
+    border: #47454b solid 2px;
+    border-radius: 30px;
+}
+
+#terrarium .content-container {
+    grid-template-columns: 1fr 3fr;
+    gap: 2vh;
+}
+
+/*--------------------------------------------------*/
+/* Styles for My Projects page */
+#my-projects h2 {
+    margin: 10px;
+    font-size: 36px;
+    text-shadow: 3px 3px 3px #6f6e72;
+    text-align: center;
+}
+
+#my-projects h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#my-projects p {
+    font-size: 18px;
+}
+
+.project {
+    border: 2px solid #47454b;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+#my-projects .content-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr;
+    gap: 5vh;
+}
+
+#my-projects iframe, #my-projects img {
+    margin-top: 18px;
+    border: #47454b solid 2px;
+}
+
+/*--------------------------------------------------*/
+/* Styles for My Experience page */
+.experience {
+    margin: 80px;
+    padding: 100px;
+    border: #47454b solid 2px;
+}
+
+#my-experience h2 {
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+#my-experience h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-style: italic;
+}
+
+#my-experience h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+#my-experience li {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
 }
