@@ -26,11 +26,18 @@ a:hover {
 }
 
 /* Header styles */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header {
     background-color: #47454b;
     color: #fff;
     padding: 30px;
-    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
     justify-content: right;
 }
 
