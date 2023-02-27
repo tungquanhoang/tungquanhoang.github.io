@@ -23,7 +23,11 @@ a {
 }
 
 a:hover {
-    color: #6f6c77;
+    color: #9DC08B;
+}
+
+a>img:hover {
+    width: 110%;
 }
 
 /* Header styles */
@@ -31,6 +35,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 64px;
 }
 
 header {
@@ -70,6 +75,19 @@ main {
     margin: 0 auto;
     padding-left: 30vh;
     padding-right: 30vh;
+}
+
+main > * {
+    opacity: 0.2;
+    transform: translateY(5%);
+    animation: slide-up 1.5s ease forwards;
+}
+
+@keyframes slide-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
 }
 
 section {
@@ -166,7 +184,7 @@ footer {
 }
 
 .image-container {
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 #profile-picture {
